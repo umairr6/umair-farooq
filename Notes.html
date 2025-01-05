@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Notes</title>
+    <link rel="stylesheet" href="Notes.css">
+</head>
+
+<body>
+    <header>
+        <h1>Notes</h1>
+        <p>Umair Farooq</p>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="skills.html">Skills</a></li>
+                <li><a href="book.html">Book</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section class="gallery">
+            <h1>DTS</h1>
+            <p>DIGITAL AND TECHNOLOGICAL SOLUTIONS</p>
+            <h2>Unit 1</h2>
+            <div class="image-grid" id="unit1-images"></div>
+            <button class="btn" id="download-unit1">Download Unit 1</button>
+        </section>
+        <section class="gallery">
+            <h2>Unit 2</h2>
+            <div class="image-grid" id="unit2-images"></div>
+            <button class="btn" id="download-unit2">Download Unit 2</button>
+        </section>
+        <button class="btn" id="download-all">Download All</button>
+    </main>
+    <button class="btn" id="contact-feedback" onclick="window.location.href='contact.html'">Contact & Feedback</button>
+    <div class="modal" id="image-modal">
+        <span class="close">&times;</span>
+        <img class="modal-content" id="preview-image" alt="Preview">
+        <div class="navigation">
+            <button id="prev">Previous</button>
+            <button id="next">Next</button>
+        </div>
+    </div>
+    <script src="Notes.js"></script>
+</body>
+
+</html>
